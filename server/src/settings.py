@@ -1,0 +1,9 @@
+SECRET_KEY = '42e502c7497e0a64a610ffc3a7ba3de996ded46a42bcd877084ae2b7b1007e25'
+ALGORITHM = 'HS256'
+ACCESS_TOKEN_EXPIRE_DAYS = 30
+DB_USER = 'myuser'
+DB_PASSWORD = 'mypassword'
+DB_HOST = 'mydb'
+DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/mydb'
+DATA_DIR = '/data'
+LOG_PATH = '/data/app.log'
