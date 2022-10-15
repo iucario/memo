@@ -1,0 +1,151 @@
+:root {
+  --background: #f6f6f6;
+  --background-secondary: rgba(220, 220, 220, 0.5);
+  --background-item: #fff;
+  --text-primary: #222;
+  --text-secondary: #666;
+  --accent: #222;
+  --accent-text: #fff;
+  --link: #0c6fd8;
+}
+[data-theme='dark'] {
+  --background: rgb(29, 29, 29);
+  --background-secondary: rgba(87, 87, 87, 0.5);
+  --background-item: rgb(40, 40, 40);
+  --text-primary: #eee;
+  --text-secondary: #808080;
+  --accent: #e0e0e0d6;
+  --accent-text: #fff;
+  --link: #66a2e2;
+}
+
+.Background {
+  color: var(--text-primary);
+  background-color: var(--background);
+}
+
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Recursive', 'Source Han Sans SC', 'Noto sans CJK JP', 'PT sans',
+    'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13pt;
+  min-height: 100vh;
+}
+
+pre,
+code {
+  background-color: var(--background-secondary);
+}
+
+input {
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 3em;
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: var(--background);
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.input-area {
+  word-wrap: break-word;
+  width: 100%;
+  margin: 0;
+  margin-top: 1px;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  font-size: 1rem;
+  overflow: hidden;
+  resize: none;
+  color: var(--text-primary);
+  text-align: left;
+  background-color: var(--background-item);
+  line-height: 1.5;
+}
+
+.input-area:hover,
+.input-area:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px var(--background-secondary);
+}
+
+.custom-file-upload {
+  display: none;
+}
+
+.item {
+  word-break: break-all;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: var(--background-item);
+  padding: 0 0.5em;
+  margin: 0.5em 0;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .item:focus {
+    box-shadow: 0 0 0 1px var(--accent);
+  }
+}
+
+.item .item-text {
+  white-space: pre-line;
+  text-align: left;
+}
+
+.item .list {
+  display: inline-flex;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  text-indent: -1rem;
+}
+
+.item img {
+  object-fit: cover;
+  max-height: 95%;
+  border: 2px solid rgba(255, 255, 255, 0.822);
+  border-radius: 5px;
+}
+
+.item img:hover {
+  cursor: pointer;
+}
+
+.item .item-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item .date {
+  font-size: 0.8em;
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.item a {
+  color: var(--link);
+}

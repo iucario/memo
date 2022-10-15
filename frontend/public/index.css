@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CRSV,MONO@360,0,0&display=swap');
+
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('./fonts/RecursiveSansLnrSt-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'RecursiveMono';
+  src: url('./fonts/RecursiveMonoLnrSt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Recursive', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+  max-width: 100%;
+  overflow: scroll;
+  display: inline-flex;
+  scrollbar-width: none;
+}
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre,
+code {
+  font-family: 'RecursiveMono', 'Iosevka', 'SF Mono', source-code-pro, Menlo,
+    Monaco, Consolas, 'Courier New', monospace;
+  font-size: 0.9em;
+  border-radius: 0.3rem;
+  padding: 0.1em 0.2em;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
