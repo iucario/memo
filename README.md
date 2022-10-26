@@ -5,6 +5,8 @@ Built with TypeScript, React, Python, FastAPI and PostgreSQL.
 
 <img src="demo.png" alt="demo" height="500">
 
+<img src="tables.png" alt="tables" height="400">
+
 ## Requirements
 
 - Python3.10
